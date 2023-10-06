@@ -1,0 +1,358 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url("https://fonts.googleapis.com/css?family=Roboto:regular,500,700,900&display=swap");
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	/* по умолчанию */
+	/* font-size: 16px;  */
+}
+body {
+	line-height: 1;
+	color: #4b4b4b;
+	font-family: "Roboto";
+	background-color: #f5f5f5;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+/* ------------------------------ */
+.header {
+	background-color: #794f45;
+	padding: 15px;
+}
+.footer {
+	background-color: #794f45;
+	padding: 15px;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+[class*="__container"] {
+	max-width: 1050px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+
+.titles {
+	display: flex;
+	flex-direction: column;
+	row-gap: 33px;
+}
+.titles__label {
+	color: #5d62b5;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1.41;
+	letter-spacing: 2.5px;
+	text-transform: uppercase;
+	background: url("../img/mainpage/promise/Overline_Mark.svg") -5px -5px no-repeat;
+	padding: 0 0 0 32px;
+	min-height: 17px;
+}
+.titles__label_white {
+	color: #fff;
+	background: url("../img/mainpage/impact/Overline-Mark.svg") -5px -5px no-repeat;
+}
+.titles__item {
+	color: #000;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.16; /* 116.667% */
+}
+.titles__item_white {
+	color: #fff;
+}
+
+.promise {
+	padding: 110px 0 121px 0;
+	position: relative;
+	z-index: 2;
+	background-color: #f5f5f5;
+}
+.promise__container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 68px;
+	position: relative;
+}
+.promise__header {
+}
+.promise__items {
+	display: flex;
+	margin: 0 -12px;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+.promise__item {
+}
+
+.item-promise {
+	flex: 1 1 33.333%;
+	display: flex;
+	column-gap: 23px;
+	align-items: flex-start;
+	padding: 0 12px;
+	min-width: 317px;
+}
+.item-promise__img {
+	flex: 0 0 63px;
+	max-height: 63px;
+}
+.item-promise__body {
+	padding: 4px 3px 0 0;
+}
+.item-promise__title {
+	color: #f2726f;
+	font-size: 19px;
+	font-weight: 900;
+	line-height: 1.36; /* 136.842% */
+}
+.item-promise__title:not(:last-child) {
+	margin: 0 0 20px 0;
+}
+.item-promise__text {
+	line-height: 1.55; /* 150% */
+	letter-spacing: 0.15px;
+}
+
+.services {
+	padding: 110px 0 122px 0;
+	position: relative;
+}
+.services::before {
+	content: "";
+	background: url("../img/mainpage/services/services-blob.png") 0 0 / 623px 1437px no-repeat;
+	width: 623px;
+	height: 1437px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(15%, -40%);
+}
+.services__container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+}
+.services__header {
+}
+.services__header:not(:last-child) {
+	margin: 0 0 78px 0;
+}
+.services__items {
+	display: flex;
+	margin: 0 -12px;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+.services__items:not(:last-child) {
+	margin-bottom: 66px;
+}
+.services__btn {
+	align-self: center;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 24px; /* 200% */
+	letter-spacing: 0.15px;
+	text-transform: uppercase;
+	background-color: #f2726f;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-height: 48px;
+	padding: 5px 24.5px;
+	border-radius: 8px;
+	transition: transform 0.3s ease 0s;
+}
+.services__btn:hover {
+	transform: scale(1.1);
+}
+
+.item-services {
+	flex: 1 1 33.33333%;
+	padding: 0 12px;
+	min-width: 324px;
+}
+.item-services__content {
+	background-color: #fff;
+	padding: 50px 44px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	border-radius: 20px;
+	height: 100%;
+}
+.item-services__content:hover {
+	box-shadow:
+		0px 16px 24px rgba(38, 38, 38, 0.2),
+		0px 8px 16px rgba(38, 38, 38, 0.24);
+	transition: box-shadow 0.3s ease 0s;
+}
+.item-services__image {
+	flex: 0 0 63px;
+	max-width: 63px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+.item-services__image:not(:last-child) {
+	margin: 0 0 33px 0;
+}
+.item-services__img {
+	width: 100%;
+}
+.item-services__title {
+	color: #f2726f;
+	font-size: 19px;
+	font-weight: 900;
+	line-height: 1.368; /* 136.842% */
+	flex-grow: 1;
+}
+.item-services__title:not(:last-child) {
+	margin: 0 0 20px 0;
+}
+.item-services__text {
+	line-height: 1.55;
+	letter-spacing: 0.15px;
+}
+
+.impact {
+	background-color: #29c3be;
+	padding: 0 0 212px 0;
+}
+.impact__container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 76px;
+}
+.impact__body {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -10px;
+	flex-wrap: wrap-reverse;
+}
+.impact__content {
+	align-self: flex-start;
+	padding: 30px 10px 0 10px;
+	flex: 1 1 50%;
+	position: relative;
+	z-index: 2;
+}
+.impact__header {
+	max-width: 411px;
+}
+.impact__image {
+	margin: -7.619% 0 0 0;
+	padding: 0 10px;
+	flex: 1 1 50%;
+	position: relative;
+}
+
+.impact__image::before {
+	content: "";
+	background: url("../img/mainpage/impact/Blob-impact.png") 0 0 / 100% no-repeat;
+	position: absolute;
+	width: 133.65%;
+	height: 97.77%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin-top: 14.619%;
+}
+@media (width < 630px) {
+	.impact__image::before {
+		display: none;
+	}
+}
+.impact__img {
+	border-radius: 40px;
+	max-width: 100%;
+	min-width: 290px;
+	position: relative;
+}
+.impact__items {
+	display: flex;
+	margin: 0 -12px;
+	flex-wrap: wrap;
+	row-gap: 24px;
+}
+.impact__item {
+	flex: 1 1 25%;
+	padding: 0 12px;
+	min-width: 212px;
+}
+
+.item-impact {
+	display: flex;
+	column-gap: 11px;
+	align-items: flex-start;
+}
+.item-impact__icon {
+	flex: 0 0 76px;
+	max-height: 76px;
+}
+.item-impact__body {
+	display: flex;
+	row-gap: 3px;
+	flex-direction: column;
+	padding: 4px 0 0 0;
+}
+.item-impact__value {
+	color: #fff;
+	font-size: 36px;
+	font-weight: 900;
+	line-height: 1.16667; /* 116.667% */
+	flex-grow: 1;
+}
+.item-impact__text {
+	color: #5d62b5;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 1.625;
+	letter-spacing: 0.15px;
+}
